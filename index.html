@@ -14,36 +14,39 @@
 
     <title>Frontend Mentor | NFT preview card component</title>
 
-  <link rel="stylesheet" href="./style.css">
-    
-    </style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <article class="main-image"">
-        <img src="./images/image-equilibrium.jpg" alt="Equilibrium" />
-        <div>
-          <img src="./images/icon-view.svg" alt="icon view">
-        </div>
-      </article>
-      <article>
-        <h2>Equilibrium #3429</h2>
-        <p>Our Equilibrium collection promotes balance and calm.</p>
-        <ul>
-          <li>
-            <img src="./images/icon-ethereum.svg" alt="icon ethereum" /> 0.041
-            ETH
-          </li>
-          <li>
-            <img src="./images/icon-clock.svg" alt="icon clock" /> 3 days left
-          </li>
-        </ul>
-      </article>
+    <main>
+      <div class="card">
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="image equilibrium"
+          class="main-card-img"
+        />
 
-      <article class="avatar">
-        <img src="./images/image-avatar.png" alt="" />
-        <p>Creation of <span> Jules Wyvern </span></p>
-      </article>
-    </div>
+        <h1 class="title">Equilibrium #3429</h1>
+
+        <p class="description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+
+        <div class="price-row">
+          <div class="row-wrapper price">
+            <img src="./images/icon-ethereum.svg" alt="icone ethereum" />
+            <p>0.041 ETH</p>
+          </div>
+          <div class="row-wrapper day">
+            <img src="./images/icon-clock.svg" alt="icone clock" />
+            <p>3 days left</p>
+          </div>
+        </div>
+
+        <div class="user">
+          <img src="./images/image-avatar.png" alt="avatar user" />
+          <p>Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
